@@ -1,0 +1,266 @@
+:root {
+  --color--primary: #131313;
+  --color--secondary: #1f1f1f;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Typography */
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background: var(--color--primary);
+  color: white;
+  margin: 0 0 0 0;
+}
+.footer_main {
+  font-size: 16px;
+}
+h1 {
+  background: linear-gradient(
+    292.46deg,
+    #27ae60 17.79%,
+    #2f80ed 35.92%,
+    #9b51e0 54.06%,
+    #eb5757 71.08%,
+    #f2994a 87.36%
+  );
+  max-width: 800px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+h2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 19px;
+  text-align: left;
+  font-weight: 400;
+  max-width: 900px;
+}
+.block_para {
+  font-size: 16px;
+  text-align: left;
+  max-width: 900px;
+}
+
+.block-bold {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.block--h2 {
+  text-align: left;
+}
+
+.second_color {
+  color: #9b9b9b;
+  font-weight: 700;
+}
+
+.contact {
+  background: linear-gradient(
+    292.46deg,
+    #27ae60 17.79%,
+    #2f80ed 35.92%,
+    #9b51e0 54.06%,
+    #eb5757 71.08%,
+    #f2994a 87.36%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* icons */
+
+.icons {
+  height: 30px;
+}
+
+.icons_border {
+  padding: 5px 15px;
+  border: 1px solid #424242;
+  margin: 0 10px;
+}
+
+.icons--blue {
+  background: #458df5;
+  border: 0;
+}
+.icons--white {
+  color: white;
+}
+
+.icons--black {
+  background: black;
+}
+
+/* navigation-bar */
+.nav_fixed {
+  position: fixed;
+  width: 100%;
+  background: var(--color--primary);
+}
+.nav_bar {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.side_icons {
+  display: flex;
+}
+
+.icons--white:hover {
+  color: rgba(255, 255, 255, 0.74);
+}
+.icons--back:hover {
+  background: #458ef5c7;
+}
+.icons_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .icons_mobile {
+    display: none;
+  }
+  .icons_desktop {
+    display: flex;
+  }
+  .icons--dim {
+    color: rgb(184, 184, 184);
+  }
+  .icons--dim:hover {
+    color: white;
+  }
+  .icon--400 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .fa {
+    font-size: 14px;
+  }
+  .icons--white {
+    padding: 10px 10px;
+  }
+}
+
+/* Center_Layout */
+.main_head {
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 25px 0 25px;
+  justify-content: center;
+}
+/* img */
+.example {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* blocks*/
+
+.block_1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.block--eg {
+  margin: 10px 10px 10px 10px;
+}
+
+@media screen and (min-width: 780px) {
+  .block_1 {
+    max-width: 900px;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+  .block--eg {
+    height: 223px;
+    width: 350px;
+    margin-top: 110px;
+  }
+  .block_2 {
+    display: flex;
+    max-width: 900px;
+    align-items: center;
+  }
+
+  .block--margin {
+    width: 250px;
+    padding-right: 20px;
+  }
+  .block_para {
+    margin-bottom: 5px;
+  }
+  .block_2_para {
+    padding-left: 15px;
+  }
+}
+
+/* footer */
+.fo_main {
+  background: var(--color--secondary);
+  width: 100%;
+}
+.footer_main {
+  padding: 20px 0 40px 0;
+}
+.footer--icons {
+  display: none;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer_block {
+  margin: 0 45px;
+}
+
+.list--li {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .fo_main {
+    background: var(--color--secondary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .footer_main {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 20px 0 40px 0;
+  }
+  .footer--icons {
+    display: block;
+  }
+  .fa-brands {
+    margin: 0 5px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+}
